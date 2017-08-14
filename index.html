@@ -7,56 +7,56 @@
     <body>
         <header class="main-header">
             <nav class="main-nav">
-                <a><img class="logo" src="img/logo.svg" width="160" height="65" alt="Логотип веб-студии «Нёрдс»"></a>
+                <a>
+                    <img class="logo" src="img/logo.svg" width="160" height="65" alt="Логотип веб-студии «Нёрдс»">
+                </a>
                 <ul class="site-nav">
-                    <li><a href="#">Студия</a></li>
-                    <li><a href="#">Клиенты</a></li>
-                    <li><a href="catalog.html">Магазин</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li>
+                        <a>Студия</a>
+                    </li>
+                    <li>
+                        <a href="#">Клиенты</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
                 </ul>
                 <ul class="user-nav">
-                    <li class="basket-enter"><a href="#">Корзина</a></li>
+                    <li>
+                        <a href="#">Корзина</a>
+                    </li>
                 </ul>
             </nav>
         </header>
         <main class="container">
             <h1 class="visually-hidden">Веб-студия «Nёrd's»</h1>
             <section class="promo">
+                <input class="bulet" type="radio" name="slider" value="1" checked>
+                <input class="bulet" type="radio" name="slider" value="2">
+                <input class="bulet" type="radio" name="slider" value="3">
                 <ul class="slider">
-                    <li class="slide-1">
+                    <li class="slide" id="1">
                         <div class="slider-item">
-                            <span class="slider-caption">Долго, дорого,<br>скурпулезно</span>
+                            <span class="slider-caption">Долго, дорого, скурпулезно</span>
                             <p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
                             <a class="slider-button" href="#">Узнать больше</a>
                         </div>
-                        <div class="slaider-bulets">
-                            <input class="bulet" type="radio" name="slider" value="slide-1" checked>
-                            <input class="bulet" type="radio" name="slider" value="slide-2">
-                            <input class="bulet" type="radio" name="slider" value="slide-3">
-                        </div>
                     </li>
-                    <li class="slide-2">
+                    <li class="slide" id="2">
                         <div class="slider-item">
-                            <span class="slider-caption">Любим математику<br>как никто другой</span>
+                            <span class="slider-caption">Любим математику как никто другой</span>
                             <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                             <a class="slider-button" href="#">Узнать больше</a>
                         </div>
-                        <div class="slaider-bulets">
-                            <input class="bulet" type="radio" name="slider" value="slide-1">
-                            <input class="bulet" type="radio" name="slider" value="slide-2" checked>
-                            <input class="bulet" type="radio" name="slider" value="slide-3">
-                        </div>
                     </li>
-                    <li class="slide-3">
+                    <li class="slide" id="3">
                         <div class="slider-item">
-                            <span class="slider-caption">Только ночь,<br>только хардкор</span>
+                            <span class="slider-caption">Только ночь, только хардкор</span>
                             <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                             <a class="slider-button" href="#">Узнать больше</a>
-                        </div>
-                        <div class="slaider-bulets">
-                            <input class="bulet" type="radio" name="slider" value="slide-1">
-                            <input class="bulet" type="radio" name="slider" value="slide-2">
-                            <input class="bulet" type="radio" name="slider" value="slide-3" checked>
                         </div>
                     </li>
                 </ul>
@@ -67,34 +67,49 @@
                     <li class="services-item">
                         <h3>Веб-сайты</h3>
                         <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                        <p class="services-button" id="c-b-1"><a href="#">Заказать</a></p>
+                        <img src="img/illustration-1.jpg" width="300" height="146" alt="Создание веб-сайтов">
+                        <p class="services-button services-button-red">
+                            <a href="#">Заказать</a>
+                        </p>
                     </li>
                     <li class="services-item">
                         <h3>Приложения</h3>
                         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                        <p class="services-button" id="c-b-2"><a href="#">Заказать</a></p>
+                        <img src="img/illustration-1.jpg" width="300" height="146" alt="Создание приложений">
+                        <p class="services-button services-button-green">
+                            <a href="#">Заказать</a>
+                        </p>
                     </li>
                     <li class="services-item">
                         <h3>Презентации</h3>
                         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                        <p class="services-button" id="c-b-3"><a href="#">Заказать</a></p>
+                        <img src="img/illustration-1.jpg" width="300" height="146" alt="Создание презентаций">
+                        <p class="services-button services-button-yellow">
+                            <a href="#">Заказать</a>
+                        </p>
                     </li>
                 </ul>
             </section>
             <section class="about">
                 <h2 class="visually-hidden">О нас</h2>
-                <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b> Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                <p>
+                    <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b> 
+                    Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
+                </p>
                 <div class="mini-services">
                     <span class="mini-services-legend">Выполняем заказы на разработку:</span>
                     <ul class="mini-services-list">
-                        <li class="mini-sevices-item">Веб-сайтов любой сложности</li>
-                        <li class="mini-sevices-item">Мобильных приложений для iOS и Android</li>
-                        <li class="mini-sevices-item">Слайдшоу и видео для корпоративных презентаций</li>
+                        <li class="mini-services-item">Веб-сайтов любой сложности</li>
+                        <li class="mini-services-item">Мобильных приложений для iOS и Android</li>
+                        <li class="mini-services-item">Слайдшоу и видео для корпоративных презентаций</li>
                     </ul>
                 </div>
             </section>
             <section class="adventages">
                 <h2 class="visually-hidden">Преимущества</h2>
+                <div>
+                    <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип веб-студии «Нёрдс»">
+                </div>
                 <span class="adventages-legend">C 2004 года любим точность во всем:</span>
                 <table class="advantages-list">
                     <tr class="advantages-value">
@@ -108,17 +123,30 @@
                         <th>Минимальная предоплата</th>
                     </tr>
                 </table>
-                <div>
-                    <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип веб-студии «Нёрдс»">
-                </div>
             </section>
-            <section class="featured-products">
+            <section class="partners">
                 <h2 class="visually-hidden">Наши партнеры</h2>
-                <ul class="featured-products-list">
-                    <li class="featured-products-item"><a href=https://htmlacademy.ru/intensive/htmlcss>HTML Academy</a></li>
-                    <li class="featured-products-item"><a href=#>Barbershop Borodinski</a></li>
-                    <li class="featured-products-item"><a href=#>Pink</a></li>
-                    <li class="featured-products-item"><a href=#>Mishka</a></li>
+                <ul class="partners-list">
+                    <li class="partners-item">
+                        <a href=https://htmlacademy.ru/intensive/htmlcss>
+                            <img src="img/logo-html.png" width="199" height="68" alt="HTML Academy">
+                        </a>
+                    </li>
+                    <li class="partners-item">
+                        <a href=#>
+                            <img src="img/logo-barbershop.png" width="209" height="90" alt="Barbershop Borodinski">
+                        </a>
+                    </li>
+                    <li class="partners-item">
+                        <a href=#>
+                            <img src="img/logo-pink.png" width="185" height="52" alt="Pink">
+                        </a>
+                    </li>
+                    <li class="partners-item">
+                        <a href=#>
+                            <img src="img/logo-mishka.png" width="173" height="84" alt="Mishka">
+                        </a>
+                    </li>
                 </ul>
             </section>
         </main>
@@ -131,40 +159,47 @@
                     <p>тел. +7 (812) 275-75-75</p>
                     <a href="#" class="footer-contacts-button">Напишите нам</a>
                 </div>
-                <div class="footer-map">
-                    <img src="img/map.jpg" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+                <div class="footer-contacts-map">
+                    <img src="img/map.jpg" width="1440" height="414" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
                 </div>
             </section>
             <section class="footer-social">
                 <h2 class="visually-hidden">Мы в социальных сетях</h2>
                 <ul class="social-buttons">
-                    <li class="social-buttons-item"><a href="#">Вконтакте</a></li>
-                    <li class="social-buttons-item"><a href="#">Фейсбук</a></li>
-                    <li class="social-buttons-item"><a href="#">Инстаграм</a></li>
+                    <li class="social-buttons-item">
+                        <a href="#">Вконтакте</a>
+                    </li>
+                    <li class="social-buttons-item">
+                        <a href="#">Фейсбук</a>
+                    </li>
+                    <li class="social-buttons-item">
+                        <a href="#">Инстаграм</a>
+                    </li>
                 </ul>
                 <p class="social-offer">
-                    <b>Давайте дружить, это выгодно!</b> Скидка 10% для друзей из социальных сетей.
+                    <b>Давайте дружить, это выгодно!</b> 
+                    Скидка 10% для друзей из социальных сетей.
                 </p>
             </section>
         </footer>
         <section class="modal modal-contact-form">
             <h2>Напишите нам</h2>
-            <form class="cotact-form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="form-name">
                     Ваше имя:
-                    <input class="form-name-field" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+                    <input class="form-field" type="text" name="name" placeholder="Представьтесь, пожалуйста">
                 </p>
                 <p class="form-mail">
                     Ваш e-mail:
-                    <input class="form-mail-field" type="text" name="mail" placeholder="Для отправки ответа">
+                    <input class="form-field" type="text" name="mail" placeholder="Для отправки ответа">
                 </p>
                 <p class="form-message">
                     Текст письма:
-                    <input class="form-message-field" type="text" name="message" placeholder="В свободной форме">
+                    <textarea class="form-field" name="message" placeholder="В свободной форме"></textarea>
                 </p>
                 <button class="button contact-form-button" type="submit">Отправить</button>     
             </form>
-            <span class="modal-close">x</span>
+            <span class="modal-close"></span>
         </section>
     </body>
 </html>
