@@ -10,7 +10,7 @@
     <body>
         <header class="main-header">
             <nav class="main-nav">
-                <a class="logo" href="index.html">
+                <a class="logo-img" href="index.html">
                     <img src="img/logo.svg" width="160" height="65" alt="Логотип веб-студии «Нёрдс»">
                 </a>
                 <ul class="site-nav">
@@ -52,39 +52,39 @@
                     </fieldset>
                     <fieldset class="form-group">
                         <legend class="group-title">Сетка:</legend>
-                        <input class="form-radio-input" type="radio" name="grid" value="adaptive" id="radio-1" checked>
-                        <label class="form-radio-item" for="radio-1">
+                        <label class="form-radio-item">
+                            <input class="form-radio-input" type="radio" name="grid" value="adaptive" checked>
                             <span class="form-radio-text">Адаптивная</span>
                         </label>
-                        <input class="form-radio-input" type="radio" name="grid" value="fixed" id="radio-2">
-                        <label class="form-radio-item" for="radio-2">
+                        <label class="form-radio-item">
+                            <input class="form-radio-input" type="radio" name="grid" value="fixed">
                             <span class="form-radio-text">Фиксированная</span>
                         </label>      
-                        <input class="form-radio-input" type="radio" name="grid" value="reflowable" id="radio-3">
-                        <label class="form-radio-item" for="radio-3">
+                        <label class="form-radio-item">
+                            <input class="form-radio-input" type="radio" name="grid" value="reflowable">
                             <span class="form-radio-text">Резиновая</span>
                         </label>
                     </fieldset>
                     <fieldset class="form-group">
                         <legend class="group-title">Особенности:</legend>
-                        <input class="form-checkbox-input" type="checkbox" name="slider" id="checkbox-1" checked disabled>
-                        <label class="form-checkbox-item" for="checkbox-1">
+                        <label class="form-checkbox-item">
+                            <input class="form-checkbox-input" type="checkbox" name="slider" checked disabled>
                             <span class="form-checkbox-text">Слайдер</span>
                         </label>
-                        <input class="form-checkbox-input" type="checkbox" name="adventages" id="checkbox-2">
-                        <label class="form-checkbox-item" for="checkbox-2">
+                        <label class="form-checkbox-item">
+                            <input class="form-checkbox-input" type="checkbox" name="adventages">
                             <span class="form-checkbox-text">Блок примуществ</span>
                         </label>
-                        <input class="form-checkbox-input" type="checkbox" name="news" id="checkbox-3" checked>
-                        <label class="form-checkbox-item" for="checkbox-3">
+                        <label class="form-checkbox-item">
+                            <input class="form-checkbox-input" type="checkbox" name="news" checked>
                             <span class="form-checkbox-text">Новости</span>
                         </label>
-                        <input class="form-checkbox-input" type="checkbox" name="gallery" id="checkbox-4">
-                        <label class="form-checkbox-item" for="checkbox-4">
+                        <label class="form-checkbox-item">
+                            <input class="form-checkbox-input" type="checkbox" name="gallery">
                             <span class="form-checkbox-text">Галерея</span>
                         </label>
-                        <input class="form-checkbox-input" type="checkbox" name="basket" id="checkbox-5">
-                        <label class="form-checkbox-item" for="checkbox-5">
+                        <label class="form-checkbox-item">
+                            <input class="form-checkbox-input" type="checkbox" name="basket">
                             <span class="form-checkbox-text">Корзина</span>
                         </label>
                     </fieldset>
@@ -104,7 +104,7 @@
                 <div class="catalog-content">
                     <div class="catalog-items">
                         <article class="catalog-item">
-                            <div class="catalog-item-hover">
+                            <div class="catalog-item-description">
                                 <h3 class="catalog-item-title">
                                     <a href="#">Sedona</a>
                                 </h3>
@@ -118,7 +118,7 @@
                             </div>
                         </article>
                         <article class="catalog-item">
-                            <div class="catalog-item-hover">
+                            <div class="catalog-item-description">
                                 <h3 class="catalog-item-title">
                                     <a href="#">Pink App</a>
                                 </h3>
@@ -132,7 +132,7 @@
                             </div>
                         </article>    
                         <article class="catalog-item">
-                            <div class="catalog-item-hover">
+                            <div class="catalog-item-description">
                                 <h3 class="catalog-item-title">
                                     <a href="#">Barbershop</a>
                                 </h3>
@@ -146,7 +146,7 @@
                             </div>
                         </article>    
                         <article class="catalog-item">
-                            <div class="catalog-item-hover">
+                            <div class="catalog-item-description">
                                 <h3 class="catalog-item-title">
                                     <a href="#">Mishka</a>
                                 </h3>
@@ -160,7 +160,7 @@
                             </div>
                         </article>    
                         <article class="catalog-item">
-                            <div class="catalog-item-hover">
+                            <div class="catalog-item-description">
                                 <h3 class="catalog-item-title">
                                     <a href="#">A Plus</a>
                                 </h3>
@@ -174,7 +174,7 @@
                             </div>
                         </article>    
                         <article class="catalog-item">
-                            <div class="catalog-item-hover">
+                            <div class="catalog-item-description">
                                 <h3 class="catalog-item-title">
                                     <a href="#">Кваст</a>
                             </h3>
@@ -239,15 +239,15 @@
             <h2>Напишите нам</h2>
             <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
                 <label class="form-text-item">
-                    <b class="form-text-field">Ваше имя:</b><br>
+                    <b class="form-text-text">Ваше имя:</b>
                     <input class="form-text-input" type="text" name="name" placeholder="Представьтесь, пожалуйста">
                 </label>
                 <label class="form-text-item">
-                    <b class="form-text-field">Ваш e-mail:</b><br>
-                    <input class="form-text-input" type="text" name="mail" placeholder="Для отправки ответа">
+                    <b class="form-text-text">Ваш e-mail:</b>
+                    <input class="form-text-input" type="email" name="mail" placeholder="Для отправки ответа">
                 </label>
                 <label class="form-text-item">
-                    <b class="form-text-field">Текст письма:</b><br>
+                    <b class="form-text-text">Текст письма:</b>
                     <textarea class="form-text-textarea" name="message" placeholder="В свободной форме"></textarea>
                 </label>
                 <button class="button contact-form-button" type="submit">Отправить</button>     
