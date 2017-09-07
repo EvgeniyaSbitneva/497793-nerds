@@ -15,7 +15,7 @@
                 </a>
                 <ul class="site-nav">
                     <li>
-                        <a>Студия</a>
+                        <a href="#">Студия</a>
                     </li>
                     <li>
                         <a href="#">Клиенты</a>
@@ -28,42 +28,47 @@
                     </li>
                 </ul>
                 <ul class="user-nav">
-                    <li>
+                    <li class="site-nav-current">
                         <a href="#">Корзина</a>
                     </li>
                 </ul>
             </nav>
-        </header>
-        <main class="container">
-            <h1 class="visually-hidden">Веб-студия «Nёrd's»</h1>
+            <h1 class="visually-hidden">Веб-студия «Нёрдс»</h1>
             <section class="promo">
-                <input class="bulet" type="radio" name="slider" value="1" checked>
-                <input class="bulet" type="radio" name="slider" value="2">
-                <input class="bulet" type="radio" name="slider" value="3">
+                <input  class="visually-hidden" type="radio" name="slider" id="bul-1" checked>
+                <input class="visually-hidden" type="radio" name="slider" id="bul-2">
+                <input class="visually-hidden" type="radio" name="slider" id="bul-3">
+                <div class="slider-bulets">
+                    <label class="bulet" for="bul-1"></label>
+                    <label class="bulet" for="bul-2"></label>
+                    <label class="bulet" for="bul-3"></label>
+                </div>  
                 <ul class="slider">
-                    <li class="slide" id="1">
-                        <div class="slider-item slide-1">
+                    <li class="slide">
+                        <div class="slider-text">
                             <span class="slider-caption">Долго, дорого, скрупулезно</span>
-                            <p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
                             <a class="button slider-button" href="#">Узнать больше</a>
                         </div>
                     </li>
                     <li class="slide" id="2">
-                        <div class="slider-item slide-2">
+                        <div class="slider-text">
                             <span class="slider-caption">Любим математику как никто другой</span>
-                            <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                             <a class="button slider-button" href="#">Узнать больше</a>
                         </div>
                     </li>
                     <li class="slide" id="3">
-                        <div class="slider-item slider-3">
+                        <div class="slider-text">
                             <span class="slider-caption">Только ночь, только хардкор</span>
-                            <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                             <a class="button slider-button" href="#">Узнать больше</a>
                         </div>
                     </li>
                 </ul>
             </section>
+        </header>
+        <main class="container">
             <section class="services">
                 <h2 class="visually-hidden">Услуги веб-студии</h2>
                 <ul class="services-list">
@@ -101,8 +106,8 @@
                 </section>
                 <section class="advantages">
                     <h2 class="visually-hidden">Преимущества</h2>
-                        <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип веб-студии «Нёрдс»">
-                    <span class="advantages-legend">C 2004 года любим   точность во всем:</span>
+                    <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип веб-студии «Нёрдс»">
+                    <b class="advantages-legend">C 2004 года любим   точность во всем:</b>
                     <table class="advantages-list">
                         <tr class="advantages-value">
                             <td>146<sup>%</sup></td>
@@ -142,6 +147,8 @@
                     </li>
                 </ul>
             </section> 
+        </main>
+        <footer class="main-footer">
             <section class="contacts">
                 <h2 class="visually-hidden">Контактная информация</h2>
                 <div class="contacts-container">
@@ -150,27 +157,34 @@
                     <p>тел. +7 (812) 275-75-75</p>
                     <a href="#" class="button contacts-button">Напишите нам</a>
                 </div>
-                <div class="contacts-map">
-                    <img src="img/map.jpg" width="1440" height="416" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-                </div>
+                <img src="img/map.jpg" width="1440" height="416" alt="Адрес: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" class="map">
             </section>
-        </main>
-        <footer class="main-footer">
             <section class="social">
                 <h2 class="visually-hidden">Мы в социальных сетях</h2>
                 <ul class="social-buttons">
                     <li class="social-buttons-item">
-                        <a href="#">Вконтакте</a>
+                        <a href="#" class="social-button">
+                            <span class="visually-hidden">Вконтакте</span>
+                            <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+                        </a>
                     </li>
                     <li class="social-buttons-item">
-                        <a href="#">Фейсбук</a>
+                        <a href="#" class="social-button">
+                            <span class="visually-hidden">Фейсбук</span>
+                            <img src="img/fb-icon.svg" width="12" height="22" alt="Вконтакте">
+                        </a>
                     </li>
                     <li class="social-buttons-item">
-                        <a href="#">Инстаграм</a>
+                        <a href="#" class="social-button">
+                            <span class="visually-hidden">Инстаграм</span>
+                            <img src="img/insta-icon.svg" width="21" height="21" alt="Вконтакте">
+                        </a>
                     </li>
                 </ul>
-                <b class="lead social-lead">Давайте дружить, это выгодно!</b> 
-                <p class="social-offer">Скидка 10% для друзей из социальных сетей.</p>
+                <div class="offer">
+                    <b class="lead social-lead">Давайте дружить, это выгодно!</b> 
+                    <p class="social-offer">Скидка 10% для друзей из социальных сетей.</p>
+                </div>  
             </section>
         </footer>
         <section class="modal modal-contact-form">
@@ -184,9 +198,9 @@
                     <b class="form-text-text">Ваш e-mail:</b>
                     <input class="form-text-input" type="email" name="mail" placeholder="Для отправки ответа">
                 </label>
-                <label class="form-text-item">
+                <label class="form-text-item form-text-item-textarea">
                     <b class="form-text-text">Текст письма:</b>
-                    <textarea class="form-text-textarea" name="message" placeholder="В свободной форме"></textarea>
+                    <textarea class="form-text-textarea" name="message" rows="5" placeholder="В свободной форме"></textarea>
                 </label>
                 <button class="button contact-form-button" type="submit">Отправить</button>     
             </form>
