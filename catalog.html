@@ -5,7 +5,8 @@
         <title>Каталог шаблонов - Веб-студия «Nёrd's»</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">  
+        <link href="css/style.css" rel="stylesheet">
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     </head>
     <body>
         <header class="main-header">
@@ -37,57 +38,74 @@
                 <h1 class="page-title">Магазин готовых шаблонов</h1>
             </div>
         </header>
-        <main class="container">
+        <main class="container catalog-container">
             <section class="filters">
                 <h2 class="visually-hidden">Фильтры товаров</h2>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <fieldset class="form-group">
                         <legend>Стоимость:</legend>
                         <div class="range-scale">
-                            <div class="handel"></div>
-                            <div class="handel"></div>
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="toggle toggle-min"></div>
+                            <div class="toggle toggle-max"></div>
                         </div>
-                        <label for="range-min">От</label>
-                        <input class="range-input" type="text" name="min" value="0" id="range-min">
-                        <label for="range-max">До</label>
-                        <input class="range-input" type="text" name="max" value="15 000" id="range-max">
+                        <div class="price-scale">
+                            <label class="price-input price-min">
+                                От
+                                <input type="text" name="price-min" value="0">
+                            </label>
+                            <label class="price-input price-max">
+                                До
+                                <input type="text" name="price-max" value="15 000">
+                            </label>
+                        </div>
                     </fieldset>
                     <fieldset class="form-group">
                         <legend class="group-title">Сетка:</legend>
                         <label class="form-radio-item">
-                            <input class="form-radio-input" type="radio" name="grid" value="adaptive" checked>
-                            <span class="form-radio-text">Адаптивная</span>
+                            <input class="visually-hidden" type="radio" name="grid" value="adaptive" checked>
+                            <span class="form-indicator radio-indicator"></span>
+                            <span class="form-text">Адаптивная</span>
                         </label>
                         <label class="form-radio-item">
-                            <input class="form-radio-input" type="radio" name="grid" value="fixed">
-                            <span class="form-radio-text">Фиксированная</span>
+                            <input class="visually-hidden" type="radio" name="grid" value="fixed">
+                            <span class="form-indicator radio-indicator"></span>
+                            <span class="form-text">Фиксированная</span>
                         </label>      
                         <label class="form-radio-item">
-                            <input class="form-radio-input" type="radio" name="grid" value="reflowable">
-                            <span class="form-radio-text">Резиновая</span>
+                            <input class="visually-hidden" type="radio" name="grid" value="reflowable">
+                            <span class="form-indicator radio-indicator"></span>
+                            <span class="form-text">Резиновая</span>
                         </label>
                     </fieldset>
                     <fieldset class="form-group">
                         <legend class="group-title">Особенности:</legend>
                         <label class="form-checkbox-item">
-                            <input class="form-checkbox-input" type="checkbox" name="slider" checked disabled>
-                            <span class="form-checkbox-text">Слайдер</span>
+                            <input class="visually-hidden" type="checkbox" name="slider" checked>
+                            <span class="form-indicator checkbox-indicator"></span>
+                            <span class="form-text">Слайдер</span>
                         </label>
                         <label class="form-checkbox-item">
-                            <input class="form-checkbox-input" type="checkbox" name="adventages">
-                            <span class="form-checkbox-text">Блок примуществ</span>
+                            <input class="visually-hidden" type="checkbox" name="adventages">
+                            <span class="form-indicator checkbox-indicator"></span>
+                            <span class="form-text">Блок преимуществ</span>
                         </label>
                         <label class="form-checkbox-item">
-                            <input class="form-checkbox-input" type="checkbox" name="news" checked>
-                            <span class="form-checkbox-text">Новости</span>
+                            <input class="visually-hidden" type="checkbox" name="news" checked>
+                            <span class="form-indicator checkbox-indicator"></span>
+                            <span class="form-text">Новости</span>
                         </label>
                         <label class="form-checkbox-item">
-                            <input class="form-checkbox-input" type="checkbox" name="gallery">
-                            <span class="form-checkbox-text">Галерея</span>
+                            <input class="visually-hidden" type="checkbox" name="gallery">
+                            <span class="form-indicator checkbox-indicator"></span>
+                            <span class="form-text">Галерея</span>
                         </label>
                         <label class="form-checkbox-item">
-                            <input class="form-checkbox-input" type="checkbox" name="basket">
-                            <span class="form-checkbox-text">Корзина</span>
+                            <input class="visually-hidden" type="checkbox" name="basket" disabled>
+                            <span class="form-indicator checkbox-indicator"></span>
+                            <span class="form-text">Корзина</span>
                         </label>
                     </fieldset>
                     <button class="button filter-button" type="submit">Показать</button>
@@ -97,11 +115,19 @@
                 <h2 class="visually-hidden">Каталог шаблонов</h2>
                 <div class="assortment">
                     <span class="assortment-legend">Сортировать:</span>
-                    <a class="assortment-type assortment-type-current">По цене</a>
-                    <a href="#" class="assortment-type">По типу</a>
-                    <a href="#" class="assortment-type">По названию</a>                      
-                    <a class="assortment-course assortment-course-current">По возрастанию</a>
-                    <a href="#" class="assortment-course">По убыванию</a>
+                    <div class="assortment-words">
+                        <a class="assortment-type assortment-type-current">По цене</a>
+                        <a href="#" class="assortment-type">По типу</a>
+                        <a href="#" class="assortment-type">По названию</a> 
+                    </div>
+                    <div class="assortment-icons">
+                        <a class="assortment-course assortment-course-down assortment-course-current">
+                            <span class="visually-hidden">По возрастанию</span>
+                        </a>
+                        <a href="#" class="assortment-course assortment-course-up">
+                            <span class="visually-hidden">По убыванию</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="catalog-content">
                     <div class="catalog-items">
@@ -110,13 +136,11 @@
                                 <h3 class="catalog-item-title">
                                     <a href="#">Sedona</a>
                                 </h3>
-                                <p>Информационный сайт для туристов</p>
-                                <a class="button catalog-button" href="#">9900 руб.</a>
+                                <p>Информационный сайт<br> для туристов</p>
+                                <a class="button catalog-button" href="#">9 900 руб.</a>
                             </div>
                             <div class="catalog-image">
-                                <a href="#">
-                                    <img src="img/img-sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов «Седона»">
-                                </a>
+                                <img src="img/img-sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов «Седона»">
                             </div>
                         </article>
                         <article class="catalog-item">
@@ -125,12 +149,10 @@
                                     <a href="#">Pink App</a>
                                 </h3>
                                 <p>Продуктовый лендинг приложения для iOS и Android</p>
-                                <a class="button catalog-button" href="#">9900 руб.</a>
+                                <a class="button catalog-button" href="#">9 900 руб.</a>
                             </div>
                             <div class="catalog-image">
-                                <a href="#">
-                                    <img src="img/img-pink.jpg" width="360" height="576" alt="Продуктовый лендинг приложения для iOS и Android «Pink»">
-                                </a>
+                                <img src="img/img-pink.jpg" width="360" height="576" alt="Продуктовый лендинг приложения для iOS и Android «Pink»">
                             </div>
                         </article>    
                         <article class="catalog-item">
@@ -138,13 +160,11 @@
                                 <h3 class="catalog-item-title">
                                     <a href="#">Barbershop</a>
                                 </h3>
-                                <p>Сайт салона красоты. Для мужчин, да.</p>
-                                <a class="button catalog-button" href="#">9900 руб.</a>
+                                <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+                                <a class="button catalog-button" href="#">9 900 руб.</a>
                             </div>
                             <div class="catalog-image">
-                                <a href="#">
-                                    <img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт салоны красоты «Barbershop»">
-                                </a>
+                                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт салоны красоты «Barbershop»">
                             </div>
                         </article>    
                         <article class="catalog-item">
@@ -152,13 +172,11 @@
                                 <h3 class="catalog-item-title">
                                     <a href="#">Mishka</a>
                                 </h3>
-                                <p>Интернет-магазин вязаных игрушек </p>
-                                <a class="button catalog-button" href="#">9900 руб.</a>
+                                <p>Интернет-магазин<br> вязаных игрушек </p>
+                                <a class="button catalog-button" href="#">9 900 руб.</a>
                             </div>
                             <div class="catalog-image">
-                                <a href="#">
-                                    <img src="img/img-mishka.jpg" width="360" height="576" alt="Интернет-магазин вязаных игрушек «Mishka»">
-                                </a>
+                                <img src="img/img-mishka.jpg" width="360" height="576" alt="Интернет-магазин вязаных игрушек «Mishka»">
                             </div>
                         </article>    
                         <article class="catalog-item">
@@ -167,12 +185,10 @@
                                     <a href="#">A Plus</a>
                                 </h3>
                                 <p>Лендинг курсов повышения квалификации</p>
-                                <a class="button catalog-button" href="#">9900 руб.</a>
+                                <a class="button catalog-button" href="#">9 900 руб.</a>
                             </div>
                             <div class="catalog-image">
-                                <a href=#>
-                                    <img src="img/img-aplus.jpg" width="360" height="576" alt="Лендинг курсов повышения квалификации «A Plus»">
-                                </a>
+                                <img src="img/img-aplus.jpg" width="360" height="576" alt="Лендинг курсов повышения квалификации «A Plus»">
                             </div>
                         </article>    
                         <article class="catalog-item">
@@ -181,27 +197,25 @@
                                     <a href="#">Кваст</a>
                             </h3>
                                 <p>Промо-сайт производителя крафтового кваса</p>
-                                <a class="button catalog-button" href="#">9900 руб.</a>
+                                <a class="button catalog-button" href="#">9 900 руб.</a>
                             </div>
                             <div class="catalog-image">
-                                <a href="#">
-                                    <img src="img/img-kvast.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса «Кваст»"> 
-                                </a>
+                                <img src="img/img-kvast.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса «Кваст»"> 
                             </div>
                         </article>
                     </div>   
                     <ul class="pagination-list">
                         <li class="pagination-item pagination-item-current">
-                            <a class="button">1</a>
+                            <a class="button pagination-button-number">1</a>
                         </li>
                         <li class="pagination-item">
-                            <a href=# class="button">2</a>
+                            <a href=# class="button pagination-button-number">2</a>
                         </li>
                         <li class="pagination-item">
-                            <a href=# class="button">3</a>
+                            <a href=# class="button pagination-button-number">3</a>
                         </li>
-                        <li class="pagination-item pagination-item-next">
-                            <a href=# class="button">Следующая</a>
+                        <li class="pagination-item">
+                            <a href=# class="button pagination-button">Следующая</a>
                         </li>
                      </ul>
                 </div>
@@ -213,7 +227,7 @@
                 <div class="contacts-container">
                     <b class="contacts-title">Nёrd's disign studio</b>
                     <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-                    <p>тел. +7 (812) 275-75-75</p>
+                    <p><span>тел. +7 (8</span><span>12) 275-75-75</span></p>
                     <a href="#" class="button contacts-button">Напишите нам</a>
                 </div>
                 <img src="img/map.jpg" width="1440" height="416" alt="Адрес: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" class="map">
@@ -257,9 +271,9 @@
                     <b class="form-text-text">Ваш e-mail:</b>
                     <input class="form-text-input" type="email" name="mail" placeholder="Для отправки ответа">
                 </label>
-                <label class="form-text-item">
+                <label class="form-text-item form-text-item-textarea">
                     <b class="form-text-text">Текст письма:</b>
-                    <textarea class="form-text-textarea" name="message" placeholder="В свободной форме"></textarea>
+                    <textarea class="form-text-textarea" name="message" rows="5" placeholder="В свободной форме"></textarea>
                 </label>
                 <button class="button contact-form-button" type="submit">Отправить</button>     
             </form>
