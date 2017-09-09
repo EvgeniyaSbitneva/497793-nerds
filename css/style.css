@@ -1042,8 +1042,10 @@ input[type="radio"].visually-hidden {
     -webkit-box-sizing: border-box;
     
             box-sizing: border-box;
+    
     width: 260px;
     padding: 16px auto;
+    vertical-align: middle;
 }
 
 .title-wrapper {
@@ -1248,10 +1250,14 @@ input[type="radio"].visually-hidden {
 }
 
 .form-radio-item {
+    display: block;
+    
     margin-bottom: 16px;
 }
 
 .form-checkbox-item {
+    display: block;
+    
     margin-bottom: 17px;
 }
 
@@ -1564,6 +1570,7 @@ input[type="radio"].visually-hidden {
     
     margin: 0;
     margin-right: 11px;
+    vertical-align: middle;
     
     color: #000000;
     
