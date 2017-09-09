@@ -680,6 +680,10 @@ input[type="radio"].visually-hidden {
 
 .contacts iframe {
     position: absolute;
+    
+    width: 100%;
+    
+    border: none;
 }
 
 .contacts-container {
