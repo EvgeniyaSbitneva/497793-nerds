@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Веб-студия «Nёrd's»</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav">
+                <a class="logo-img" href="index.html">
+                    <img src="img/logo.svg" width="160" height="65" alt="Логотип веб-студии «Нёрдс»">
+                </a>
+                <ul class="site-nav">
+                    <li>
+                        <a href="#">Студия</a>
+                    </li>
+                    <li>
+                        <a href="#">Клиенты</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="user-nav">
+                    <li>
+                        <a href="#">Корзина</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="title-wrapper">
+                <h1 class="page-title">Форма обратной связи</h1>
+            </div>
+        </header>
+        <main class="container">
+            <section class="modal-contact-form no-modal">
+                <h2>Напишите нам</h2>
+                <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+                    <label class="form-text-item">
+                        <b class="form-text-text">Ваше имя:</b>
+                        <input class="form-text-input" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+                    </label>
+                    <label class="form-text-item">
+                        <b class="form-text-text">Ваш e-mail:</b>
+                        <input class="form-text-input" type="email" name="mail" placeholder="Для отправки ответа">
+                    </label>
+                    <label class="form-text-item form-text-item-textarea">
+                        <b class="form-text-text">Текст письма:</b>
+                        <textarea class="form-text-textarea" name="message" rows="5" placeholder="В свободной форме"></textarea>
+                    </label>
+                    <button class="button contact-form-button" type="submit">Отправить</button>
+                </form>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <section class="contacts">
+                <h2 class="visually-hidden">Контактная информация</h2>
+                <div class="contacts-container">
+                    <b class="contacts-title">Nёrd's disign studio</b>
+                    <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+                    <p><a class="no-style">тел. +7 (812) 275-75-75</a></p>
+                    <a class="button contacts-button">Напишите нам</a>
+                </div>
+                <iframe src="https://yandex.ru/map-widget/v1/-/C6XCmWzg" width="100%" height="416" frameborder="0"></iframe>
+                <img src="img/map.jpg" width="1440" height="416" alt="Адрес: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" class="map">
+            </section>
+            <section class="social">
+                <h2 class="visually-hidden">Мы в социальных сетях</h2>
+                <ul class="social-buttons">
+                    <li class="social-buttons-item">
+                        <a href="#" class="social-button">
+                            <span class="visually-hidden">Вконтакте</span>
+                            <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+                        </a>
+                    </li>
+                    <li class="social-buttons-item">
+                        <a href="#" class="social-button">
+                            <span class="visually-hidden">Фейсбук</span>
+                            <img src="img/fb-icon.svg" width="12" height="22" alt="Вконтакте">
+                        </a>
+                    </li>
+                    <li class="social-buttons-item">
+                        <a href="#" class="social-button">
+                            <span class="visually-hidden">Инстаграм</span>
+                            <img src="img/insta-icon.svg" width="21" height="21" alt="Вконтакте">
+                        </a>
+                    </li>
+                </ul>
+                <div class="offer">
+                    <b class="lead social-lead">Давайте дружить, это выгодно!</b> 
+                    <p class="social-offer">Скидка 10% для друзей из социальных сетей.</p>
+                </div>  
+            </section>
+        </footer>
+    </body>
+</html>
+        

@@ -678,6 +678,10 @@ input[type="radio"].visually-hidden {
     min-width: 1160px;
 }
 
+.contacts iframe {
+    position: absolute;
+}
+
 .contacts-container {
     position: absolute;
     top: 50%;
@@ -695,6 +699,7 @@ input[type="radio"].visually-hidden {
     min-height: 308px;
     
     background-color: #ffffff;
+    z-index: 10;
 }
 
 .map {
@@ -820,6 +825,46 @@ input[type="radio"].visually-hidden {
     line-height: 22px;
 }
 
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+
+    70% {
+        transform: translateY(30px);
+    }
+
+    90% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
 .modal {
     display: none; 
     
@@ -842,8 +887,21 @@ input[type="radio"].visually-hidden {
     padding: 67px 100px 84px;
 }
 
+.no-modal {
+    width: 760px;
+    margin: auto;
+    padding: 67px 100px 84px;
+}
+
+
 .modal-show {
     display: block;
+    
+    animation: bounce 0.6s;
+}
+
+.modal-error {
+    animation: shake 0.4s;
 }
 
 .modal-close {
