@@ -1,5 +1,5 @@
 body {
-    min-width: 1160px;
+    min-width: 1200px;
     margin: 0;
     padding: 0;
     
@@ -195,16 +195,17 @@ input[type="radio"].visually-hidden {
     
     width: 1160px;
     height: 430px;
+    
     margin: 0 auto;
     margin-bottom: 80px;
-    padding: 0;
+    padding: 0 20px;
     
     list-style: none;
 }
 
 .slider-bulets {
     position: absolute;
-    bottom: 100px;
+    bottom: 96px;
     left: 50%;
     z-index: 10;
     
@@ -218,14 +219,12 @@ input[type="radio"].visually-hidden {
 .slider-bulets label {
     display: inline-block;
     
-    width: 4px;
-    height: 4px;
-    margin: 0 11px;
+    width: 18px;
+    height: 18px;
+    margin: 0 7px;
     
     background: #ffffff;
-    border: 2px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 0 0 5px #ffffff;
     
     cursor: pointer;
 }
@@ -233,7 +232,9 @@ input[type="radio"].visually-hidden {
 #bul-1:checked ~ .slider-bulets label[for="bul-1"],
 #bul-2:checked ~ .slider-bulets label[for="bul-2"],
 #bul-3:checked ~ .slider-bulets label[for="bul-3"] { 
-    border: 2px solid #c1c1c1;
+    box-shadow: 
+        inset 0 0 0 5px #ffffff,
+        inset 0 0 0 7px #c1c1c1;
 }
 
 #bul-1:focus ~ .slider-bulets label[for="bul-1"],
@@ -253,11 +254,7 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
-.slide {
-    position:absolute;
-    top:0;
-    left:0;
-    
+.slide { 
     width:100%;
     height:100%;
     
@@ -619,16 +616,10 @@ input[type="radio"].visually-hidden {
     opacity: 0.1;
 }
 
-/*.contacts {
-    background-image: url("../img/map.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    width: 100%;
-    height: 416px;
-}*/
-
 .contacts {
     position: relative;
+    
+    min-width: 1160px;
 }
 
 .contacts-container {
@@ -650,7 +641,9 @@ input[type="radio"].visually-hidden {
 
 .map {
     display: block;
-    width: 100%;
+    
+    margin: auto;
+    
     height: 416px;
 }
 
@@ -670,7 +663,7 @@ input[type="radio"].visually-hidden {
 .contacts-container p {
     margin: 0;
     padding: 0;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     
     font-size: 16px;
     line-height: 18px;
@@ -680,7 +673,7 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
     width: 219px;
     
-    margin-top: 20px;
+    margin-top: 18px;
     padding: 16px auto;
 }
 
@@ -900,7 +893,6 @@ input[type="radio"].visually-hidden {
     
     box-sizing: border-box;
     width: 260px;
-    height: 50px;
     padding: 16px auto;
 }
 
@@ -1271,8 +1263,12 @@ input[type="radio"].visually-hidden {
     position: relative;
     
     margin: 0;
-    margin-bottom: 66px;
+    margin-bottom: 73px;
     padding: 0;
+}
+
+.catalog-image img {
+    display: block;
 }
 
 .catalog-image::before {
@@ -1291,7 +1287,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-description { 
     position: absolute;
-    bottom: 8px;
+    bottom: 0;
     right: 0;
     
     width: 240px;
@@ -1388,7 +1384,6 @@ input[type="radio"].visually-hidden {
 .pagination-button-number {
     padding: 16px 10px;
     width: 50px;
-    height: 50px;
 }
 
 .pagination-item-current a,
