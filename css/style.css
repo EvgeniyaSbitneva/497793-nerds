@@ -51,7 +51,7 @@ img {
     
     background-color: #d7373b;
     -webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
-            box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -68,7 +68,7 @@ input[type="radio"].visually-hidden {
     white-space: nowrap;
 
     -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
+    clip-path: inset(100%);
     
     clip: rect(0 0 0 0);
     overflow: hidden;
@@ -123,10 +123,10 @@ input[type="radio"].visually-hidden {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
     
     width: 440px;
     margin: 0;
@@ -136,9 +136,9 @@ input[type="radio"].visually-hidden {
 .user-nav {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     
     max-width: 160px;
     margin: 0;
@@ -250,7 +250,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-shadow: 
         inset 0 0 0 5px #ffffff,
         inset 0 0 0 7px #c1c1c1; 
-            box-shadow: 
+    box-shadow: 
         inset 0 0 0 5px #ffffff,
         inset 0 0 0 7px #c1c1c1;
 }
@@ -358,9 +358,9 @@ input[type="radio"].visually-hidden {
     
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     
     margin: 0;
     padding: 0;
@@ -369,14 +369,14 @@ input[type="radio"].visually-hidden {
 .services-item {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;     
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     
     width: 300px;
     margin-bottom: 80px;
@@ -391,8 +391,8 @@ input[type="radio"].visually-hidden {
 
 .services-item img {
     -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    -ms-flex-order: -1;
+    order: -1;
     
     margin-bottom: 26px;
 }
@@ -454,10 +454,10 @@ input[type="radio"].visually-hidden {
 .about-section {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    display: flex;
+    justify-content: space-between;
     
     margin: 0;
     padding: 75px 0 72px;
@@ -539,13 +539,13 @@ input[type="radio"].visually-hidden {
 .advantages {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;      
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     
     width: 360px;
     margin-top: -35px;
@@ -564,7 +564,7 @@ input[type="radio"].visually-hidden {
 .advantages-legend {
     margin-bottom: 25px;
     -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
 }
 
 .advantages-value {
@@ -606,12 +606,12 @@ input[type="radio"].visually-hidden {
     
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;      
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     
     margin: 0;
     padding: 0;
@@ -619,15 +619,16 @@ input[type="radio"].visually-hidden {
 
 .partners-list li {
     position: relative;
+    
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;    
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     width: 300px;
     min-height: 180px;
@@ -700,7 +701,7 @@ input[type="radio"].visually-hidden {
     left: 50%;
     
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     
     margin-left: -580px;
     margin-top: -154px;
@@ -745,7 +746,7 @@ input[type="radio"].visually-hidden {
 
 .contacts-button {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     width: 219px;
     
     margin-top: 18px;
@@ -755,12 +756,12 @@ input[type="radio"].visually-hidden {
 .social {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;    
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     
     width: 1160px;
     margin: 0 auto;
@@ -772,12 +773,12 @@ input[type="radio"].visually-hidden {
     
     display: -webkit-box; 
     display: -ms-flexbox; 
-    display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;      
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     
     width: 260px;
     margin: 0;
@@ -788,13 +789,13 @@ input[type="radio"].visually-hidden {
 .social-buttons-item a {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;      
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     width: 78px;
     height: 78px;
@@ -884,7 +885,7 @@ input[type="radio"].visually-hidden {
     
     background-color: #ffffff;
     -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
 
 .modal-contact-form {
@@ -955,12 +956,12 @@ input[type="radio"].visually-hidden {
 .contact-form {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .form-text-item {
@@ -987,7 +988,7 @@ input[type="radio"].visually-hidden {
 
 .form-text-input {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     width: 360px;
     margin: 0;
     padding: 13px 14px 15px;
@@ -1001,7 +1002,7 @@ input[type="radio"].visually-hidden {
 
 .form-text-textarea {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     width: 760px;
     
     margin: 0;
@@ -1042,15 +1043,14 @@ input[type="radio"].visually-hidden {
     
     border: 2px solid #e74246;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
 }
 
 .contact-form-button {
     display: inline-block;
     
     -webkit-box-sizing: border-box;
-    
-            box-sizing: border-box;
+    box-sizing: border-box;
     
     width: 260px;
     padding: 16px auto;
@@ -1060,12 +1060,12 @@ input[type="radio"].visually-hidden {
 .title-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;      
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     
     width: 1160px;
     margin: 0 auto 55px;
@@ -1088,10 +1088,10 @@ input[type="radio"].visually-hidden {
 .catalog-container {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    display: flex;
+    justify-content: space-between;
 }
 
 .filters {
@@ -1101,25 +1101,25 @@ input[type="radio"].visually-hidden {
 .filter {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;     
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .filter fieldset {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;    
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     
     margin: 0;
     margin-bottom: 27px;
@@ -1154,8 +1154,8 @@ input[type="radio"].visually-hidden {
     position: relative;
     
     -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     
-            box-sizing: border-box;
     margin-bottom: 15px;
     padding: 39px 20px;
     
@@ -1203,15 +1203,15 @@ input[type="radio"].visually-hidden {
 .price-scale {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: wrap;   
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;       
     -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -ms-flex-align: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .price-input {
@@ -1229,8 +1229,8 @@ input[type="radio"].visually-hidden {
     padding: 0 5px;
     
     -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     
-            box-sizing: border-box;
     width: 80px;
     height: 38px;
     
@@ -1355,12 +1355,10 @@ input[type="radio"].visually-hidden {
     position: relative;
     
     display: -webkit-box;
-    
     display: -ms-flexbox;
-    
-    display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
      
     margin-top: 5px; 
     margin-bottom: 96px;
@@ -1373,12 +1371,12 @@ input[type="radio"].visually-hidden {
 .assortment-words {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: wrap; 
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     
     margin-left: auto;
     
@@ -1461,12 +1459,12 @@ input[type="radio"].visually-hidden {
 .catalog-items {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     
     margin: 0;
     padding: 0;
@@ -1554,7 +1552,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-button {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     width: 200px;
 }
 
@@ -1562,12 +1560,10 @@ input[type="radio"].visually-hidden {
     list-style: none;
     
     display: -webkit-box;
-    
     display: -ms-flexbox;
-    
-    display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     
     margin: -13px 0 60px;
     padding: 0;
@@ -1575,8 +1571,9 @@ input[type="radio"].visually-hidden {
 
 .pagination-item a {
     display: inline-block;
+    
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     
     margin: 0;
     margin-right: 11px;
